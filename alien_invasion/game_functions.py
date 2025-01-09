@@ -4,6 +4,15 @@ import pygame
 
 from bullet import Bullet
 
+'''
+    Game_Functions:
+        Included in project when cloned from ehmatthes repo. Functions
+        included in functionality for game, this file with purpose to 
+        minimize absolute scope of alien_invasion.py to simple game run.
+        Will later model my own file like this with the functions already
+        included in aliens_invasion.py (TODO)
+'''
+
 def check_keydown_events(event, ai_settings, screen, ship, bullets):
     """Respond to keypresses."""
     if event.key == pygame.K_RIGHT:
