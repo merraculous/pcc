@@ -41,5 +41,6 @@ class Ship(Sprite):
         self.screen.blit(self.image, self.rect)
 
     def center_ship(self):
-        self.rect.bottom = self.screen_rect.bottom
-        self.x = float(self.rect.x)
+        """Center ship to bottom of screen."""
+        self.rect.midbottom = self.screen_rect.midbottom
+        self.center = float(self.rect.centerx)
