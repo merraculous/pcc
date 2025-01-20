@@ -1,4 +1,29 @@
-Python Crash Course
+PCC Projects
+===
+Practice with python through projects. Accidentally started on previous version repo so two projects found here: Alien Invasion and Generating Data. Individual documentation for projects can be found in their folders. Preexisting code for PCC chapters found in chapters folder.
+
+Alien Invasion
+---
+In Alien Invasion, the player controls a rocket ship that appears
+at the bottom center of the screen. The player can move the ship
+right and left using the arrow keys and shoot bullets using the
+spacebar. When the game begins, a fleet of aliens fills the sky
+and moves across and down the screen. The player shoots and
+destroys the aliens. If the player destroys all the aliens, a new fleet
+appears that moves faster than the previous fleet. If any alien hits
+the player’s ship or reaches the bottom of the screen, the player
+loses a ship. If the player loses three ships, the game ends.
+
+More information found [here](alien_invasion/README.md).
+
+Generate Data
+---
+
+This project focuses on visualization of generated data to give practice to creating graphs of information. No Pygal is used.
+
+More information found [here](generate_data/README.md).
+
+Credits Python Crash Course
 ===
 
 A Hands-On, Project-Based Introduction to Programming
