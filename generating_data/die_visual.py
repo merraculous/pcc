@@ -2,7 +2,13 @@ import plotly.express as px
 
 from die import Die
 
-# Create a D6.
+'''
+    die_visual:
+        Create 2 dice (one 6 sided, the other 10 sided) and
+        roll each number of times. Store summation of each roll. Use results 
+        to create histogram of frequency of each possible total (2-16)
+'''
+# Create two dice: D6 and D10.
 die_1 = Die()
 die_2 = Die(10)
 
@@ -20,8 +26,6 @@ for value in poss_results:
     frequency = results.count(value)
     frequencies.append(frequency)
 
-print(frequencies)
-    
 # Visualize the results.
 title = "Results of rolling D6 and D10 50,000 times."
 labels = {'x': 'Result', 'y': 'Frequency of Result'}
