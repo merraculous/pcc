@@ -5,7 +5,6 @@ import pygame
 from bullet import Bullet
 from alien import Alien
 
-
 '''
     Game_Functions:
         Included in project when cloned from ehmatthes repo. Functions
@@ -14,7 +13,6 @@ from alien import Alien
         Will later model my own file like this with the functions already
         included in aliens_invasion.py (TODO)
 '''
-
 def check_events(game):
     """Respond to keypresses and mouse events."""
     for event in pygame.event.get():
@@ -52,8 +50,7 @@ def check_keyup_events(event, game):
         game.ship.moving_right = False
     elif event.key == pygame.K_LEFT:
         game.ship.moving_left = False
-    
-           
+
 def check_play_button(game, mouse_pos):
     """Start new game when play button pressed."""
     button_clicked = game.play_button.rect.collidepoint(mouse_pos)
@@ -81,7 +78,6 @@ def reset_screen(game):
         game.ship.center_ship()
         game.sb.prep_score()
     
-
 def create_fleet(game):
     """Create alien fleet and space alien ships one width apart above/below."""
     alien = Alien(game.settings, game.screen)

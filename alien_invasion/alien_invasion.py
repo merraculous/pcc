@@ -18,7 +18,6 @@ from scoreboard import Scoreboard
 '''
 class AlienInvasion:
 
-
     def __init__(self):
         """Initialize game, settings, stats, and screen object."""
         pygame.init()
@@ -44,26 +43,20 @@ class AlienInvasion:
         
         gf.create_fleet(self)
 
-
     def run_game(self):
         """Continuous game play."""
         # Start the main loop for the game.
         while True:
-            
             gf.check_events(self)
             
             if self.game_active:
-                
                 self.ship.update()               
                 gf.update_bullets(self)
                 gf.update_aliens(self)
                 
-            
             gf.update_screen(self)
-
             self.clock.tick(60)
      
-        
 if __name__ == '__main__':
     #make game instance and run game.
     ai = AlienInvasion()
